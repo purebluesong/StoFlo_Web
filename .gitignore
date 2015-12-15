@@ -1,0 +1,5 @@
+*.sqlite
+*.sqlite3
+*.doc
+*.pyc
+/service/*.pyc
