@@ -19,6 +19,12 @@ def getIndexInfo():
 	return {}
 
 @csrf_exempt
-def index(request):
+def index(returnequest):
 	content = getIndexInfo()
 	return render_to_response('index.html', content)
+
+def login(request):
+	return none
+
+def regeister(request):
+	return none

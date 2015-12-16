@@ -1,0 +1,54 @@
+<!-- Header
+============================================= -->
+<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+<div id="header-wrap" class="">
+    <div class="container clearfix">
+        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+        <!-- Logo
+        ============================================= -->
+        <div id="logo">
+            <img src="/static/res/sto_logo.png" alt="StoFlo Logo">
+        </div><!-- #logo end -->
+
+        <!-- Primary Navigation
+        ============================================= -->
+        <nav id="primary-menu" class="dark">
+
+            <ul style="display: block;">
+                <li class="sub-menu"  ><a href="/"> <div>Home</div></a> 
+                    <ul>
+                        <li><a href="/">nothing</a> </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul style="display: block;">
+                <li class="sub-menu"><a href="#" id='loginbtn'> <div>Login</div></a> 
+                    <ul>
+                        <li><a href="/login_ui">login</a> </li>
+                        <li><a href="/regeister">regeister</a> </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Top Search
+            ============================================= -->
+            <div id="top-search">
+                <a href="http://demo1.cssmoban.com/cssthemes3/mbts_14_canvas/index.html#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                <form action="http://demo1.cssmoban.com/cssthemes3/mbts_14_canvas/search.html" method="get">
+                    <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                </form>
+            </div><!-- #top-search end -->
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    document.getElementById("loginbtn").addEventListener("click", main_login);
+                });
+                function main_login() {
+                    $("#main_login").fadeIn("slow");
+                    $("#mask").addClass("mask").fadeIn("slow");
+                }
+            </script>
+        </nav><!-- #primary-menu end -->
+    </div>
+</div>
+</header><!-- #header end -->

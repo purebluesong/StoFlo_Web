@@ -7,5 +7,6 @@ urlpatterns = [
 ]
 
 urlpatterns += [
-	
+	url(r'^login$', views.login),
+	url(r'^regeister',views.regeister),	
 ]
