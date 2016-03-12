@@ -17,13 +17,13 @@ class StoUser(User):
 class Chapter(models.Model):
 	name = models.CharField(u'章节名', max_length=63)
 	content = models.TextField(u'内容')
-	parentChapter_ID = models.IntegerField(u'父章节id',blank=True)
-	sonChapters_ID = models.TextField(u'子章节id',blank=True)
+	parentChapter_ID = models.IntegerField(u'父章节id', blank=True)
+	sonChapters_ID = models.TextField(u'子章节id', blank=True)
 	author = models.OneToOneField(StoUser, verbose_name=u'创作者')
-	son_num = models.IntegerField(u'子章节数量',default=0)
+	son_num = models.IntegerField(u'子章节数量', default=0)
 	image_url = models.URLField(u'图片链接', blank=True)
 	enjoy_num = models.IntegerField(u'喜欢人数', default=0)
-	lovers = models.ManyToManyField(User,verbose_name=u'喜欢的人')
+	lovers = models.ManyToManyField(User, verbose_name=u'喜欢的人')
 
 class Story(models.Model):
 	name = models.CharField(u'故事名', max_length=63)
